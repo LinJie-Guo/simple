@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>个人博客网站</title>
+	{literal}
+	<style type="text/css">
+	#nav{width:730px; height:90px;background-color:lightblue;}
+	#main{width:730px;height: 300px;background-color:pink;}
+	#fool{width:730px;height: 90px;background-color:lightblue;}
+	#left{width:230px;height: 300px;background-color:lightgreen; float:left;}
+	#right{width:450px;height: 300px;background-color:lightgray;float:right;}
+	</style>
+	{/literal}
+</head>
+<body>
+	<div id='nav'>
+		{block name='nav'}首页、博文、美图、分享{/block}
+	</div>
+	<div id='main'>
+	{block name='main'}
+		<div id='left'>
+			{block name='left'} left{/block}
+		</div>
+		<div id='right'>
+			{block name='right'} right{/block}
+		</div>
+	{/block}
+	</div>
+	<div id='fool'>
+		版权
+	</div>
+</body>
+</html>
