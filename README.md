@@ -1,5 +1,7 @@
 # framwork
+
 1.目录结构
+
     Application //项目目录
         --Config    //网站配置文件
         --Controller//控制器
